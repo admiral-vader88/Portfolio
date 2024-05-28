@@ -1,0 +1,283 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    background: url('gradient_1.jpg') no-repeat center center fixed, linear-gradient(135deg, #000428, #004e92);
+    background-size: cover;
+    color: #fff;
+}
+
+header {
+    background: rgba(51, 51, 51, 0.9);
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 0.5em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #40c9ff;
+}
+
+.contact-button {
+    background-color: #40c9ff;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+}
+
+main {
+    padding-top: 5em;
+}
+
+#hero {
+    text-align: center;
+    padding: 4em 1em;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+    margin: 1em auto;
+    max-width: 90%;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.text-container {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.text-container h1 {
+    font-size: 2.5em;
+    margin: 0.5em 0;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.5em 1em;
+    margin: 0.5em;
+    background-color: #40c9ff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #40c9ff;
+}
+
+.hero-photo {
+    width: 250px;
+    height: auto;
+    border-radius: 55%;
+    margin-top: 1em;
+    border: 5px solid #40c9ff;
+}
+
+#about, #skills, #projects, #experience, #education, #contact {
+    background: rgba(0, 0, 0, 0.8);
+    margin: 1em auto;
+    padding: 2em;
+    border-radius: 8px;
+    max-width: 90%;
+}
+
+#about h2, #skills h2, #projects h2, #experience h2, #education h2, #contact h2 {
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: 2em;
+}
+
+#about p, #skills ul, #projects .project, #contact form {
+    margin: 1em auto;
+    max-width: 800px;
+}
+
+#about p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+#skills .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.skill {
+    flex: 1;
+    min-width: 200px;
+    margin: 1em;
+    padding: 1em;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+}
+
+.skill h3 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.skill ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.skill ul li {
+    margin: 0.5em 0;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1em;
+    justify-items: center;
+    align-items: stretch;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    padding: 1em;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    height: 100%; /* Ensures equal height */
+    box-sizing: border-box;
+}
+
+.project:hover {
+    background-color: rgba(64, 201, 255, 0.8);
+    transform: translateY(-5px);
+}
+
+.project h3 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.project p {
+    font-size: 1em;
+    line-height: 1.6;
+    flex-grow: 1;
+}
+
+#experience .experience-container, #education .education-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.experience-box, .education-box {
+    flex: 1;
+    min-width: 300px;
+    margin: 1em;
+    padding: 1em;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+#contact label {
+    font-size: 1.1em;
+}
+
+#contact input, #contact textarea {
+    padding: 0.5em;
+    border-radius: 4px;
+    border: none;
+    font-size: 1em;
+}
+
+#contact button {
+    background-color: #40c9ff;
+    color: #fff;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#contact button:hover {
+    background-color: #40c9ff;
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background: rgba(51, 51, 51, 0.9);
+    margin-top: 2em;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+    color: #fff;
+}
+
+#cursor {
+    display: inline-block;
+    width: 1px;
+    background-color: #40c9ff;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { background-color: transparent; }
+    50% { background-color: #40c9ff; }
+}
+
+#typing-text {
+    color: #fbff1e; /* Yellow color for typing text */
+}

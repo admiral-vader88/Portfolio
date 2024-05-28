@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pranav Jha's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact" class="contact-button">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <div class="text-container">
+                    <h1>Welcome to My Portfolio</h1>
+                    <h1>Hi! I'm Pranav Jha, I am a <span id="typing-text"></span><span id="cursor">|</span></h1>
+                    <div class="buttons">
+                        
+                        <a href="https://github.com/admiral-vader88" class="button">Visit GitHub</a>
+                        <a href="https://www.linkedin.com/in/pranav-jha-273952269/" class="button">Visit LinkedIn</a>
+                    </div>
+                </div>
+                <img src="my_photo.jpg" alt="Pranav Jha" class="hero-photo">
+            </div>
+        </section>
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div>
+                    <p>Hey there, I am Pranav Jha, a B.Tech(Hons) undergrad student at Manipal University Jaipur currently pursuing CSE with specialization in IoT and IS. An aspiring engineer with interests in AIML and IoT robotics. Proficient in Arduino IDE and Raspberry Pi in hardware and facial recognition in software engineering. Outside academics I enjoy expressing myself through music, badminton, athletics, and exploring new places through travel.</p>
+                    <ul>
+                        <li><strong>Email:</strong> pranavcr26@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <div class="skill">
+                    <h3>Languages</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>C/C++</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>PHP</li>
+                        <li>SQL</li>
+                    </ul>
+                </div>
+                <div class="skill">
+                    <h3>Developer Tools</h3>
+                    <ul>
+                        <li>VS Code</li>
+                        <li>Eclipse</li>
+                        <li>Arduino IDE</li>
+                        <li>PyCharm</li>
+                    </ul>
+                </div>
+                <div class="skill">
+                    <h3>Technologies/Frameworks</h3>
+                    <ul>
+                        <li>Linux</li>
+                        <li>Git</li>
+                        <li>GitHub</li>
+                        <li>Computer Vision</li>
+                        <li>Machine Learning</li>
+                        <li>Arduino</li>
+                        <li>Raspberry Pi</li>
+                        <li>Exploratory Data Analysis</li>
+                        <li>NumPy-Pandas</li>
+                        <li>Scikit-learn</li>
+                        <li>TensorFlow</li>
+                        <li>MediaPipe</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects-container">
+                <div class="project" onclick="window.location.href='https://github.com/admiral-vader88/asl';">
+                    <h3>Sign Language Translator</h3>
+                    <p>Designed a custom program using Python, OpenCV, Keras, Scikit-Learn to translate American sign language (ASL) letters from A-Z and display them on the screen.</p>
+                </div>
+                <div class="project">
+                    <h3>P.P.E Detection Kit</h3>
+                    <p>Created a device using Arduino UNO, Servo motor, ESP32, Python, and C, along with YOLOv8 to detect if a person is wearing a helmet, mask, safety goggles, and protection vest.</p>
+                </div>
+                <div class="project">
+                    <h3>Smart Attendance System</h3>
+                    <p>Designed a custom device using ESP32 module, customized PCB, and RFID module that reads ID cards using RFID reader at entry and exit doors for automatic attendance.</p>
+                </div>
+                <div class="project" onclick="window.location.href='https://github.com/admiral-vader88/OAROBOT';">
+                    <h3>Obstacle Avoidance Robot</h3>
+                    <p>Designed an obstacle avoidance robot using Arduino, L298N motor driver, two DC motors, and two Li-ion batteries which is designed to autonomously navigate around obstacles. The Arduino controls the motors via the L298N driver, using input from ultrasonic sensors to detect and avoid obstacles. The two Li-ion batteries power the entire system, ensuring mobility and continuous operation. This simple yet effective setup allows the robot to move, detect obstacles, and change direction to avoid collisions.</p>
+                </div>
+                <div class="project" onclick="window.location.href='https://github.com/admiral-vader88/webtechsneaker';">
+                    <h3>Sneakerhead</h3>
+                    <p>Created an e-commerce sneaker website using HTML, CSS, JavaScript. The HTML structure defines the layout, including product listings, details, shopping cart, and checkout forms. CSS ensures a visually appealing and responsive design. JavaScript adds interactivity for managing the shopping cart and uses AJAX for smooth product browsing. The result is a dynamic, user-friendly platform for sneaker enthusiasts.</p>
+                </div>
+                <div class="project" onclick="window.location.href='https://github.com/admiral-vader88/objectdetection';">
+                    <h3>Object Detection</h3>
+                    <p>This Python script employs OpenCV and Ultralytics' YOLO model for real-time object detection via webcam, initializing the webcam at 640x480 resolution and using a pre-trained YOLO model to identify various object classes.</p>
+                </div>
+                <div class="project" onclick="window.location.href='https://github.com/admiral-vader88/pyweather';">
+                    <h3>PyWeather</h3>
+                    <p>Created a program which uses openweather api keys to display live weather information of any city on the terminal, the system collects real-time weather data from reliable sources, ensuring accurate and up-to-date information.</p>
+                </div>
+                <div class="project" onclick="window.location.href='https://github.com/admiral-vader88/medicalpredict';">
+                    <h3>Disease Prediction</h3>
+                    <p>The provided code snippet demonstrates the use of Support Vector Machines (SVM) in predicting diseases based on symptoms. Through data preprocessing, model training, and evaluation, it showcases the potential of machine learning in healthcare for accurate diagnosis. The code also allows for real-time prediction of diseases given new symptoms, highlighting its relevance in enhancing medical decision-making processes.</p>
+                </div>
+            </div>
+        </section>
+        <section id="experience">
+            <h2>Experience</h2>
+            <div class="experience-container">
+                <div class="experience-box">
+                    <img src="bharat_intern.png" alt="Bharat Intern Logo" class="experience-logo">
+                    <h3>Bharat Intern</h3>
+                    <p><strong>Machine Learning Intern</strong> (Jan 2024 - Feb 2024, Remote)</p>
+                    <ul>
+                        <li>Predicted the genre of a movie based on its plot summary using natural language processing (NLP), TF-IDF, and Multinomial Naive Bayes.</li>
+                        <li>Predicted the Sales price for each house using TF-IDF and Random Forests.</li>
+                    </ul>
+                </div>
+                <div class="experience-box">
+                    <img src="codsoft.png" alt="Codsoft Logo" class="experience-logo">
+                    <h3>Codsoft</h3>
+                    <p><strong>Machine Learning Intern</strong> (Jan 2024 - Feb 2024, Remote)</p>
+                    <ul>
+                        <li>Classified SMS messages as spam or legitimate using TF-IDF and Multinomial Naive Bayes.</li>
+                        <li>Predicted the genre of a movie based on its plot summary using NLP, TF-IDF, and Multinomial Naive Bayes.</li>
+                        <li>Detected fraudulent credit card transactions using Logistic Regression algorithm.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="education">
+            <h2>Education</h2>
+            <div class="education-container">
+                <div class="education-box">
+                    <img src="manipal.jpg" alt="Manipal University Logo" class="education-logo">
+                    <h3>Manipal University Jaipur</h3>
+                    <p><strong>BTech CSE (IOT and IS)(Hons)</strong> (2022 - 2026, Jaipur, RJ) CGPA: 7.21</p>
+                </div>
+                <div class="education-box">
+                    <img src="vis.png" alt="Venkateshwar International School Logo" class="education-logo">
+                    <h3>Venkateshwar International School</h3>
+                    <p><strong>XIIth </strong> (2021 - 2022, New Delhi) Percentage: 81%</p>
+                    <p><strong>Xth </strong> (2019 - 2020, New Delhi) Percentage: 87%</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form id="contactForm">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Pranav Jha</p>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        const phrases = [
+            "CSE(IoT) Undergrad",
+            "IoT Specialist",
+            "Machine Learning Enthusiast",
+            "Programmer",
+            "Learner"
+        ];
+
+        const typingText = document.getElementById('typing-text');
+        const cursor = document.querySelector('#cursor');
+        let index = 0;
+        let currentIndex = 0;
+        let currentPhrase = '';
+        let isDeleting = false;
+
+        function type() {
+            const currentPhraseFull = phrases[currentIndex];
+            if (isDeleting) {
+                currentPhrase = currentPhraseFull.substring(0, currentPhrase.length - 1);
+            } else {
+                currentPhrase = currentPhraseFull.substring(0, currentPhrase.length + 1);
+            }
+
+            typingText.textContent = currentPhrase;
+
+            if (!isDeleting && currentPhrase === currentPhraseFull) {
+                setTimeout(() => {
+                    isDeleting = true;
+                }, 2000);
+            } else if (isDeleting && currentPhrase === '') {
+                isDeleting = false;
+                currentIndex = (currentIndex + 1) % phrases.length;
+            }
+
+            const typingSpeed = isDeleting ? 100 : 200;
+            setTimeout(type, typingSpeed);
+        }
+
+        document.addEventListener('DOMContentLoaded', (event) => {
+            setTimeout(type, 2000);
+        });
+
+        document.getElementById('contactForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            Email.send({
+                SecureToken: "YOUR_SECURE_TOKEN_HERE",
+                To: 'pranavcr26@gmail.com',
+                From: email,
+                Subject: `New Contact Form Submission from ${name}`,
+                Body: `Name: ${name}<br>Email: ${email}<br>Message: ${message}`
+            }).then(
+                message => alert("Message sent successfully!")
+            ).catch(
+                error => alert("Message sending failed: " + error)
+            );
+        });
+    </script>
+</body>
+</html>
