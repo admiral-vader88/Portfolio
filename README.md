@@ -1,1 +1,3 @@
 # Portfolio
+
+I built my portfolio using HTML, CSS, and JavaScript to create a sleek and responsive design. The layout features a fixed header for easy navigation, smooth scrolling, and a visually appealing hero section with a typing effect for dynamic text. Each section—About, Skills, Projects, Experience, Education, and Contact—presents my professional journey and technical skills. The Projects section includes interactive cards linking to my GitHub repositories, showcasing my work in machine learning, IoT, and web development. Additionally, I integrated EmailJS for the contact form to facilitate seamless communication. The portfolio is designed to be both informative and engaging, reflecting my technical abilities and personal interests.
