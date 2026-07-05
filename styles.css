@@ -155,10 +155,69 @@ h1, h2, h3 {
   padding: 7em 1.5em 5em;
 }
 
+.hero-split {
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  gap: 3em;
+  align-items: center;
+}
+
 .hero h1 {
   font-size: clamp(2.5rem, 6vw, 4rem);
   margin-bottom: 0.3em;
 }
+
+/* Hero photo — viewfinder frame, nods to the computer-vision work */
+.hero-photo-frame {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  aspect-ratio: 1 / 1;
+  margin: 0 auto;
+  padding: 14px;
+}
+
+.hero-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+  display: block;
+  background: var(--surface);
+}
+
+.hero-photo-frame.photo-missing .hero-photo {
+  visibility: hidden;
+}
+
+.hero-photo-frame.photo-missing::after {
+  content: 'Add profile.jpg';
+  position: absolute;
+  inset: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+  background: var(--surface);
+  border: 1px dashed var(--line);
+  border-radius: 4px;
+}
+
+.frame-corner {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border-color: var(--accent);
+  border-style: solid;
+  border-width: 0;
+}
+
+.corner-tl { top: 0; left: 0; border-top-width: 2px; border-left-width: 2px; }
+.corner-tr { top: 0; right: 0; border-top-width: 2px; border-right-width: 2px; }
+.corner-bl { bottom: 0; left: 0; border-bottom-width: 2px; border-left-width: 2px; }
+.corner-br { bottom: 0; right: 0; border-bottom-width: 2px; border-right-width: 2px; }
 
 .hero-lede {
   max-width: 600px;
@@ -286,6 +345,72 @@ a.project-card:hover {
   color: var(--accent);
 }
 
+.subheading {
+  font-family: var(--font-display);
+  color: var(--navy);
+  font-size: 1.05rem;
+  margin: 2.5em 0 1em;
+}
+
+.project-grid-compact {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.project-card-compact {
+  padding: 1.1em 1.25em;
+}
+
+.project-card-compact h3 {
+  font-size: 0.98rem;
+  margin-bottom: 0.35em;
+}
+
+.project-card-compact p {
+  font-size: 0.88rem;
+  margin-bottom: 0.6em;
+}
+
+/* Research / recognition lists */
+.research-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3em;
+  margin-bottom: 1em;
+}
+
+.clean-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 1em;
+}
+
+.clean-list li {
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25em;
+}
+
+.clean-list li:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.list-title {
+  font-weight: 500;
+  color: var(--ink);
+  font-size: 0.95rem;
+}
+
+.list-meta {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--accent);
+}
+
 /* Timeline (Experience) */
 .timeline {
   list-style: none;
@@ -384,6 +509,56 @@ a.project-card:hover {
   color: var(--ink-soft);
 }
 
+/* Recognition */
+.recognition-block + .recognition-block {
+  margin-top: 2.5em;
+}
+
+.recognition-block h3 {
+  font-size: 1rem;
+  margin-bottom: 0.9em;
+}
+
+.compact-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.9em;
+}
+
+.compact-list li {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.4em 1.5em;
+  padding-bottom: 0.9em;
+  border-bottom: 1px solid var(--line);
+}
+
+.compact-list li:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.compact-title {
+  font-weight: 500;
+  color: var(--ink);
+  flex: 1 1 380px;
+}
+
+.compact-meta {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+  white-space: nowrap;
+}
+
+.recognition-block .tag-row span {
+  white-space: normal;
+}
+
 /* Contact */
 .contact-section {
   text-align: center;
@@ -419,4 +594,8 @@ a.project-card:hover {
   .about-grid { grid-template-columns: 1fr; }
   .fact-list { border-left: none; padding-left: 0; }
   .hero-inner { padding: 5.5em 1.5em 3.5em; }
+  .hero-split { grid-template-columns: 1fr; text-align: center; }
+  .hero-split .chip-row, .hero-split .hero-actions { justify-content: center; }
+  .hero-photo-frame { order: -1; max-width: 220px; }
+  .research-grid { grid-template-columns: 1fr; gap: 2em; }
 }
