@@ -1,64 +1,36 @@
-document.addEventListener('DOMContentLoaded', function() {
-    document.querySelectorAll('nav a').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            e.preventDefault();
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
-        });
-    });
+// Smooth-scroll for in-page nav links (CSS scroll-behavior covers most
+// browsers already; this keeps focus handling correct for keyboard users).
+document.querySelectorAll('a[href^="#"]').forEach((link) => {
+  link.addEventListener('click', (event) => {
+    const targetId = link.getAttribute('href');
+    const target = document.querySelector(targetId);
+    if (!target) return;
 
-    // Function to update hero section content
-    function updateHeroContent(title, description) {
-        document.querySelector('#hero h1').textContent = title;
-        document.querySelector('#hero p').textContent = description;
-    }
-
-    // Call updateHeroContent with initial content
-    updateHeroContent("Welcome to My Portfolio", "I'm Pranav Jha, a ");
-
-    document.getElementById('contactForm').addEventListener('submit', function(event) {
-        event.preventDefault();
-
-        const name = document.getElementById('name').value;
-        const email = document.getElementById('email').value;
-        const message = document.getElementById('message').value;
-
-        Email.send({
-            SecureToken: "YOUR_SECURE_TOKEN",
-            To: 'pranavcr26@gmail.com',
-            From: email,
-            Subject: `New Contact Form Submission from ${name}`,
-            Body: `Name: ${name} <br> Email: ${email} <br> Message: ${message}`
-        }).then(
-            message => alert("Message sent successfully!")
-        );
-    });
-
-    // Typing effect
-    const phrases = ["Web Developer", "Machine Learning Enthusiast", "Tech Blogger"];
-    let currentIndex = 0;
-    let isDeleting = false;
-    let index = 0;
-    const typingText = document.getElementById("typing-text");
-
-    function type() {
-        const currentPhrase = phrases[index];
-        if (isDeleting) {
-            typingText.textContent = currentPhrase.substring(0, currentIndex - 1);
-            currentIndex--;
-            if (currentIndex <= 0) {
-                isDeleting = false;
-                index = (index + 1) % phrases.length;
-            }
-        } else {
-            typingText.textContent = currentPhrase.substring(0, currentIndex + 1);
-            currentIndex++;
-            if (currentIndex >= currentPhrase.length) {
-                setTimeout(() => isDeleting = true, 2000);
-            }
-        }
-        setTimeout(type, isDeleting ? 50 : 100);
-    }
-    type();
+    event.preventDefault();
+    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    target.setAttribute('tabindex', '-1');
+    target.focus({ preventScroll: true });
+  });
 });
+
+// Highlight the current section in the nav as the page is scrolled.
+const sections = document.querySelectorAll('main section[id]');
+const navLinks = document.querySelectorAll('.site-header nav a');
+
+if ('IntersectionObserver' in window && sections.length) {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        navLinks.forEach((link) => {
+          link.style.color = link.getAttribute('href') === `#${entry.target.id}`
+            ? 'var(--navy)'
+            : '';
+        });
+      });
+    },
+    { rootMargin: '-40% 0px -50% 0px' }
+  );
+
+  sections.forEach((section) => observer.observe(section));
+}
