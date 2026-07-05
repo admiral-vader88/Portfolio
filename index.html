@@ -3,23 +3,24 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pranav Jha — CSE (IoT) Engineer</title>
-<meta name="description" content="Pranav Jha — Computer Science undergraduate specializing in IoT, computer vision, and machine learning.">
+<title>Pranav Jha — Robotics &amp; ML Engineer</title>
+<meta name="description" content="Pranav Jha — Incoming MS Robotics student at the University of Michigan. Robotics, computer vision, and IoT engineer.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
- 
+
 <header class="site-header">
   <div class="header-inner">
     <a href="#top" class="logo">PJ</a>
     <nav>
       <ul>
         <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
         <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#research">Research</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#education">Education</a></li>
       </ul>
@@ -27,122 +28,134 @@
     <a href="#contact" class="btn btn-primary btn-small">Contact</a>
   </div>
 </header>
- 
+
 <main id="top">
- 
+
   <!-- HERO -->
   <section class="hero">
-    <div class="hero-inner">
-      <p class="eyebrow">[ cse&nbsp;·&nbsp;iot&nbsp;·&nbsp;machine&nbsp;learning ]</p>
-      <h1>Pranav Jha</h1>
-      <p class="hero-lede">
-        Final-year CSE (IoT &amp; Information Security) undergraduate building
-        systems where sensors, hardware, and machine learning models meet —
-        from sign-language translation to PPE detection.
-      </p>
-      <div class="chip-row">
-        <span class="chip">Computer Vision</span>
-        <span class="chip">Embedded Systems</span>
-        <span class="chip">Machine Learning</span>
-        <span class="chip">Arduino &amp; Raspberry Pi</span>
+    <div class="hero-inner hero-split">
+      <div class="hero-text">
+        <p class="eyebrow">[ robotics&nbsp;·&nbsp;computer&nbsp;vision&nbsp;·&nbsp;iot ]</p>
+        <h1>Pranav Jha</h1>
+        <p class="hero-lede">
+          Incoming MS in Robotics at the University of Michigan. I build
+          autonomous systems end to end — from digital twins of industrial
+          robot controllers to real-time perception models deployed on edge
+          hardware in the field.
+        </p>
+        <div class="chip-row">
+          <span class="chip">Robotics</span>
+          <span class="chip">Computer Vision</span>
+          <span class="chip">IoT &amp; Embedded Systems</span>
+          <span class="chip">Machine Learning</span>
+        </div>
+        <div class="hero-actions">
+          <a href="mailto:pranavcr26@gmail.com" class="btn btn-primary">Email me</a>
+          <a href="https://github.com/admiral-vader88" class="btn btn-ghost" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/pranav-jha-273952269/" class="btn btn-ghost" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
       </div>
-      <div class="hero-actions">
-        <a href="mailto:pranavcr26@gmail.com" class="btn btn-primary">Email me</a>
-        <a href="https://github.com/admiral-vader88" class="btn btn-ghost" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://www.linkedin.com/in/pranav-jha-273952269/" class="btn btn-ghost" target="_blank" rel="noopener">LinkedIn</a>
+      <div class="hero-photo-frame">
+        <img src="profile.jpg" alt="Pranav Jha" class="hero-photo" onerror="this.parentElement.classList.add('photo-missing')">
+        <span class="frame-corner corner-tl"></span>
+        <span class="frame-corner corner-tr"></span>
+        <span class="frame-corner corner-bl"></span>
+        <span class="frame-corner corner-br"></span>
       </div>
     </div>
   </section>
- 
+
   <!-- ABOUT -->
   <section id="about" class="section">
     <p class="eyebrow">[ about ]</p>
     <div class="about-grid">
       <p class="about-text">
-        I'm a B.Tech (Hons) student at Manipal University Jaipur, specializing
-        in IoT and Information Security. My work sits at the intersection of
-        hardware and machine learning — I build devices that sense the world
-        (Arduino, Raspberry Pi, RFID) and models that make sense of it
-        (computer vision, NLP, classical ML). Outside of coursework, I spend
-        time on music, badminton, athletics, and travel.
+        I'm a robotics and machine learning engineer heading into a Master's
+        at Michigan this fall, after four years building systems that connect
+        hardware and intelligence — industrial digital twins, underwater
+        perception models, autonomous firefighting robots, and IoT pipelines
+        on factory floors. My work has spanned six internships across
+        research labs and industry, and produced five research
+        papers and six filed patents along the way.
       </p>
       <dl class="fact-list">
-        <div><dt>Based in</dt><dd>Jaipur, Rajasthan</dd></div>
-        <div><dt>Degree</dt><dd>B.Tech CSE (IoT &amp; IS), Hons</dd></div>
-        <div><dt>Graduating</dt><dd>2026</dd></div>
+        <div><dt>Based in</dt><dd>Gurgaon, India</dd></div>
+        <div><dt>Next</dt><dd>MS Robotics, University of Michigan</dd></div>
+        <div><dt>Starting</dt><dd>Aug 2026</dd></div>
         <div><dt>Email</dt><dd><a href="mailto:pranavcr26@gmail.com">pranavcr26@gmail.com</a></dd></div>
       </dl>
     </div>
   </section>
- 
-  <!-- PROJECTS -->
-  <section id="projects" class="section">
-    <p class="eyebrow">[ projects ]</p>
-    <h2>Selected work</h2>
-    <div class="project-grid">
- 
-      <a class="project-card" href="https://github.com/admiral-vader88/asl" target="_blank" rel="noopener">
-        <h3>Sign Language Translator</h3>
-        <p>Real-time program that translates A–Z American Sign Language letters to on-screen text.</p>
-        <div class="tag-row"><span>Python</span><span>OpenCV</span><span>Keras</span><span>Scikit-learn</span></div>
-        <span class="card-link">View on GitHub →</span>
-      </a>
- 
-      <div class="project-card">
-        <h3>PPE Detection Kit</h3>
-        <p>Device that checks a person is wearing a helmet, mask, safety goggles, and vest before granting access.</p>
-        <div class="tag-row"><span>YOLOv8</span><span>Arduino UNO</span><span>ESP32</span><span>Python</span></div>
-      </div>
- 
-      <div class="project-card">
-        <h3>Smart Attendance System</h3>
-        <p>RFID-based device with a custom PCB that logs attendance automatically at entry and exit points.</p>
-        <div class="tag-row"><span>ESP32</span><span>RFID</span><span>Custom PCB</span></div>
-      </div>
- 
-      <a class="project-card" href="https://github.com/admiral-vader88/OAROBOT" target="_blank" rel="noopener">
-        <h3>Obstacle Avoidance Robot</h3>
-        <p>Autonomous robot that uses ultrasonic sensors and a motor driver to navigate around obstacles.</p>
-        <div class="tag-row"><span>Arduino</span><span>L298N</span><span>Ultrasonic Sensors</span></div>
-        <span class="card-link">View on GitHub →</span>
-      </a>
- 
-      <a class="project-card" href="https://github.com/admiral-vader88/objectdetection" target="_blank" rel="noopener">
-        <h3>Real-Time Object Detection</h3>
-        <p>Webcam-based object detection using a pre-trained YOLO model to identify object classes live.</p>
-        <div class="tag-row"><span>Python</span><span>OpenCV</span><span>YOLO</span></div>
-        <span class="card-link">View on GitHub →</span>
-      </a>
- 
-      <a class="project-card" href="https://github.com/admiral-vader88/medicalpredict" target="_blank" rel="noopener">
-        <h3>Disease Prediction</h3>
-        <p>SVM-based model that predicts likely diseases from reported symptoms for faster triage.</p>
-        <div class="tag-row"><span>Python</span><span>SVM</span><span>Scikit-learn</span></div>
-        <span class="card-link">View on GitHub →</span>
-      </a>
- 
-      <a class="project-card" href="https://github.com/admiral-vader88/webtechsneaker" target="_blank" rel="noopener">
-        <h3>Sneakerhead</h3>
-        <p>E-commerce sneaker storefront with cart management and AJAX-driven product browsing.</p>
-        <div class="tag-row"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
-        <span class="card-link">View on GitHub →</span>
-      </a>
- 
-      <a class="project-card" href="https://github.com/admiral-vader88/pyweather" target="_blank" rel="noopener">
-        <h3>PyWeather</h3>
-        <p>Terminal tool that pulls live weather data for any city via the OpenWeather API.</p>
-        <div class="tag-row"><span>Python</span><span>REST API</span></div>
-        <span class="card-link">View on GitHub →</span>
-      </a>
- 
-    </div>
-  </section>
- 
+
   <!-- EXPERIENCE -->
   <section id="experience" class="section">
     <p class="eyebrow">[ experience ]</p>
     <h2>Experience</h2>
     <ol class="timeline">
+
+      <li>
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <div class="timeline-head">
+            <h3>Student Trainee</h3>
+            <span class="timeline-date">Jan – Apr 2026</span>
+          </div>
+          <p class="timeline-org">InterraIT · Noida</p>
+          <ul>
+            <li>Built a digital twin of the FANUC R-50i robot controller in NVIDIA Isaac Sim for realistic simulation and virtual validation of robotic operations.</li>
+            <li>Explored ROS2 integration with Isaac Sim for simulation-driven testing and control of robotic applications.</li>
+          </ul>
+        </div>
+      </li>
+
+      <li>
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <div class="timeline-head">
+            <h3>Research Intern</h3>
+            <span class="timeline-date">Jun – Aug 2025</span>
+          </div>
+          <p class="timeline-org">CSIR – National Institute of Oceanography · Goa</p>
+          <ul>
+            <li>Built lightweight, real-time coral reef segmentation models using SegFormer, UNet, and PIDNet with teacher–student knowledge distillation.</li>
+            <li>Preprocessed and augmented underwater datasets for robustness under low-light and turbid conditions.</li>
+            <li>Deployed optimized models on an NVIDIA Jetson Nano for live inference through an ROV.</li>
+          </ul>
+        </div>
+      </li>
+
+      <li>
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <div class="timeline-head">
+            <h3>Deep Learning Intern</h3>
+            <span class="timeline-date">Jun – Aug 2024</span>
+          </div>
+          <p class="timeline-org">Indira Gandhi Delhi Technical University for Women · Delhi</p>
+          <ul>
+            <li>Designed a heart disease prediction model with ensemble learning, improving diagnostic accuracy by 30%.</li>
+            <li>Built a CNN-based waste classification system that improved sorting efficiency by 20%.</li>
+            <li>Compared TensorFlow and PyTorch implementations for speed, accuracy, and compute trade-offs.</li>
+          </ul>
+        </div>
+      </li>
+
+      <li>
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <div class="timeline-head">
+            <h3>IoT Intern</h3>
+            <span class="timeline-date">May – Jul 2024</span>
+          </div>
+          <p class="timeline-org">Siemens Digital Industries Software · Gurgaon</p>
+          <ul>
+            <li>Built real-time analytics pipelines on edge IoT devices using Azure AI and Azure IoT Hub to monitor industrial sensor data.</li>
+            <li>Automated Excel-based reporting workflows, cutting manual reporting time by 15%.</li>
+            <li>Explored PLC–IoT integration and mobile device management for industrial automation.</li>
+          </ul>
+        </div>
+      </li>
+
       <li>
         <div class="timeline-marker"></div>
         <div class="timeline-content">
@@ -150,14 +163,14 @@
             <h3>Machine Learning Intern</h3>
             <span class="timeline-date">Jan – Feb 2024</span>
           </div>
-          <p class="timeline-org">Codsoft · Remote</p>
+          <p class="timeline-org">CodSoft · Remote</p>
           <ul>
-            <li>Classified SMS messages as spam or legitimate using TF-IDF and Multinomial Naive Bayes.</li>
-            <li>Predicted movie genre from plot summaries using NLP and Multinomial Naive Bayes.</li>
-            <li>Detected fraudulent credit card transactions with a logistic regression model.</li>
+            <li>Built a movie genre classifier and an SMS spam classifier using TF-IDF and Multinomial Naive Bayes.</li>
+            <li>Built a credit card fraud detection system using logistic regression.</li>
           </ul>
         </div>
       </li>
+
       <li>
         <div class="timeline-marker"></div>
         <div class="timeline-content">
@@ -167,14 +180,186 @@
           </div>
           <p class="timeline-org">Bharat Intern · Remote</p>
           <ul>
-            <li>Predicted movie genre from plot summaries using TF-IDF and Multinomial Naive Bayes.</li>
-            <li>Built a house sale price predictor using TF-IDF features and Random Forests.</li>
+            <li>Designed and trained classification and prediction models using Python, Scikit-learn, and Pandas.</li>
+            <li>Built end-to-end pipelines for preprocessing, training, and evaluation across multiple ML projects.</li>
           </ul>
         </div>
       </li>
+
     </ol>
   </section>
- 
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <p class="eyebrow">[ projects ]</p>
+    <h2>Featured work</h2>
+    <div class="project-grid">
+
+      <div class="project-card">
+        <h3>Digital Twin of a FANUC R-50i Robot Controller</h3>
+        <p>Digital twin built in NVIDIA Isaac Sim for simulation, performance analysis, and virtual validation of industrial robot operations, with ROS2 integration for controller testing.</p>
+        <div class="tag-row"><span>Isaac Sim</span><span>ROS2</span><span>Digital Twin</span></div>
+      </div>
+
+      <div class="project-card">
+        <h3>Coral Reef Semantic Segmentation</h3>
+        <p>Lightweight real-time segmentation system using teacher–student distillation (SegFormer, UNet, PIDNet), deployed on a Jetson Nano for live coral classification from ROV footage.</p>
+        <div class="tag-row"><span>SegFormer</span><span>UNet</span><span>PIDNet</span><span>Jetson Nano</span></div>
+      </div>
+
+      <div class="project-card">
+        <h3>Autonomous Firefighting Robot</h3>
+        <p>Fully simulated robot that detects and extinguishes fires using SLAM navigation, YOLOv8 fire detection, and thermal vision, with a robotic arm launching an extinguisher ball on target.</p>
+        <div class="tag-row"><span>ROS Noetic</span><span>Gazebo</span><span>YOLOv8</span><span>SLAM</span></div>
+      </div>
+
+      <div class="project-card">
+        <h3>GestureSync</h3>
+        <p>Hands-free keyboard, mouse, and media controller driven by real-time fingertip tracking — play/pause, volume, and cursor control via gesture alone.</p>
+        <div class="tag-row"><span>MediaPipe</span><span>OpenCV</span><span>PyAutoGUI</span></div>
+      </div>
+
+      <a class="project-card" href="https://github.com/admiral-vader88/asl" target="_blank" rel="noopener">
+        <h3>Real-Time Sign Language Detection</h3>
+        <p>CNN-based model recognizing static and dynamic ASL gestures from MediaPipe landmarks, enabling real-time sign-to-text translation.</p>
+        <div class="tag-row"><span>MediaPipe</span><span>TensorFlow</span><span>OpenCV</span></div>
+        <span class="card-link">View on GitHub →</span>
+      </a>
+
+      <div class="project-card">
+        <h3>PPE Detection Kit</h3>
+        <p>Smart safety gate that verifies helmet, mask, goggles, and vest compliance via YOLOv8 before an Arduino-controlled servo grants access.</p>
+        <div class="tag-row"><span>YOLOv8</span><span>Arduino UNO</span><span>ESP32</span></div>
+      </div>
+
+      <div class="project-card">
+        <h3>Smart Attendance System</h3>
+        <p>Custom PCB device using RFID card scanning to log attendance automatically at entry and exit points.</p>
+        <div class="tag-row"><span>ESP32</span><span>RFID</span><span>Custom PCB</span></div>
+      </div>
+
+    </div>
+
+    <h3 class="subheading">Earlier projects</h3>
+    <div class="project-grid project-grid-compact">
+
+      <a class="project-card project-card-compact" href="https://github.com/admiral-vader88/OAROBOT" target="_blank" rel="noopener">
+        <h3>Obstacle Avoidance Robot</h3>
+        <p>Autonomous navigation using ultrasonic sensors and a dual-motor driver.</p>
+        <span class="card-link">GitHub →</span>
+      </a>
+
+      <a class="project-card project-card-compact" href="https://github.com/admiral-vader88/objectdetection" target="_blank" rel="noopener">
+        <h3>Real-Time Object Detection</h3>
+        <p>Webcam-based detection using a pre-trained YOLO model.</p>
+        <span class="card-link">GitHub →</span>
+      </a>
+
+      <a class="project-card project-card-compact" href="https://github.com/admiral-vader88/medicalpredict" target="_blank" rel="noopener">
+        <h3>Disease Prediction</h3>
+        <p>SVM-based model predicting likely diseases from symptoms.</p>
+        <span class="card-link">GitHub →</span>
+      </a>
+
+      <a class="project-card project-card-compact" href="https://github.com/admiral-vader88/webtechsneaker" target="_blank" rel="noopener">
+        <h3>Sneakerhead</h3>
+        <p>E-commerce sneaker storefront with cart and AJAX browsing.</p>
+        <span class="card-link">GitHub →</span>
+      </a>
+
+      <a class="project-card project-card-compact" href="https://github.com/admiral-vader88/pyweather" target="_blank" rel="noopener">
+        <h3>PyWeather</h3>
+        <p>Terminal tool pulling live weather via the OpenWeather API.</p>
+        <span class="card-link">GitHub →</span>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- RESEARCH & RECOGNITION -->
+  <section id="research" class="section">
+    <p class="eyebrow">[ research &amp; recognition ]</p>
+    <h2>Publications, patents &amp; leadership</h2>
+
+    <div class="research-grid">
+      <div class="research-col">
+        <h3 class="subheading">Publications</h3>
+        <ul class="clean-list">
+          <li>
+            <span class="list-title">Knowledge Distillation of Real-Time Coral Segmentation for Underwater ROV Applications</span>
+            <span class="list-meta">Journal · ongoing · 2nd author · Nov 2025</span>
+          </li>
+          <li>
+            <span class="list-title">Real-Time Coral Semantic Segmentation for Underwater ROV Applications</span>
+            <span class="list-meta">INDIAcom 2026 · awaiting acceptance · 2nd author</span>
+          </li>
+          <li>
+            <span class="list-title">Autonomous Firefighting Robot with Catapult-Based Suppression in ROS-Gazebo Environment</span>
+            <span class="list-meta">HITA 2025 · accepted &amp; presented · 1st author</span>
+          </li>
+          <li>
+            <span class="list-title">Leveraging Optimized Hybrid Ensemble Models to Predict Sustainability Awareness in Indian Youth</span>
+            <span class="list-meta">COACONS 2025 · presented, awaiting publication · 2nd author</span>
+          </li>
+          <li>
+            <span class="list-title">Blockchain-Based Optimization Algorithm for Secure IoT Communication Using AMQP</span>
+            <span class="list-meta">IEEE Xplore · ICAIHC 2025 · 3rd author</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="research-col">
+        <h3 class="subheading">Patents filed</h3>
+        <ul class="clean-list">
+          <li><span class="list-title">IoT-Based Smart Parking System using Arduino UNO and Xcode</span><span class="list-meta">No. 202511067693</span></li>
+          <li><span class="list-title">Fire-Fighting &amp; Rescue Robot with Real-Time Image Detection and Autonomous Navigation</span><span class="list-meta">No. 202511066903</span></li>
+          <li><span class="list-title">GestureSync Music Controller</span><span class="list-meta">No. 202411086632</span></li>
+          <li><span class="list-title">People Counting Device</span><span class="list-meta">No. 202311060355</span></li>
+          <li><span class="list-title">Smart Attendance System</span><span class="list-meta">No. 202311060429</span></li>
+          <li><span class="list-title">Automated Fare Collection Device</span><span class="list-meta">No. 202311060360</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="research-grid">
+      <div class="research-col">
+        <h3 class="subheading">Leadership &amp; outreach</h3>
+        <ul class="clean-list">
+          <li>
+            <span class="list-title">Technical Secretary, IEEE Sensors Council MUJ</span>
+            <span class="list-meta">Jun 2024 – Apr 2025 · led technical documentation and workshop organization</span>
+          </li>
+          <li>
+            <span class="list-title">Head of Projects, IEEE Sensors Council MUJ</span>
+            <span class="list-meta">May 2023 – Jun 2024 · led Talkathon INNOVATEX events and Time-Bat Relic treasure hunt</span>
+          </li>
+          <li>
+            <span class="list-title">Guest Speaker, Robotics Workshop</span>
+            <span class="list-meta">May 2026 · hands-on robotics session for Classes 6–10</span>
+          </li>
+          <li>
+            <span class="list-title">Robotics Workshop for Alumni Outreach</span>
+            <span class="list-meta">Aug 2024 · introduced robotics fundamentals to Classes 6–8</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="research-col">
+        <h3 class="subheading">Achievements &amp; certifications</h3>
+        <ul class="clean-list">
+          <li><span class="list-title">Top 200 nationwide, Smart India Hackathon</span><span class="list-meta">2024</span></li>
+          <li><span class="list-title">Certificate of Excellence — Technical &amp; Innovation</span><span class="list-meta">2025</span></li>
+          <li><span class="list-title">Certificate of Excellence — Research (×2)</span><span class="list-meta">2025</span></li>
+          <li><span class="list-title">Certificate of Appreciation — patent publication</span><span class="list-meta">2023</span></li>
+          <li><span class="list-title">Cisco CCNA — Networks, Switching, Wireless &amp; Routing</span></li>
+          <li><span class="list-title">Stanford — Supervised Machine Learning</span></li>
+          <li><span class="list-title">Microsoft — Azure Solutions on Edge Devices</span></li>
+          <li><span class="list-title">UC Irvine — Introduction to IoT (6-course specialization)</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
   <!-- SKILLS -->
   <section id="skills" class="section">
     <p class="eyebrow">[ skills ]</p>
@@ -182,19 +367,27 @@
     <div class="skills-grid">
       <div class="skill-group">
         <h3>Languages</h3>
-        <div class="tag-row"><span>Python</span><span>Java</span><span>C / C++</span><span>SQL</span><span>PHP</span><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        <div class="tag-row"><span>Python</span><span>Java</span><span>C</span><span>SQL</span><span>PHP</span><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
       </div>
       <div class="skill-group">
-        <h3>ML &amp; Data</h3>
-        <div class="tag-row"><span>Scikit-learn</span><span>TensorFlow</span><span>NumPy / Pandas</span><span>MediaPipe</span><span>EDA</span></div>
+        <h3>Robotics &amp; Simulation</h3>
+        <div class="tag-row"><span>ROS / ROS2</span><span>Gazebo</span><span>RViz</span><span>NVIDIA Isaac Sim</span><span>SLAM</span></div>
       </div>
       <div class="skill-group">
-        <h3>Hardware &amp; Tools</h3>
-        <div class="tag-row"><span>Arduino</span><span>Raspberry Pi</span><span>Git / GitHub</span><span>Linux</span><span>VS Code</span><span>PyCharm</span></div>
+        <h3>ML &amp; Vision</h3>
+        <div class="tag-row"><span>TensorFlow</span><span>PyTorch</span><span>Scikit-learn</span><span>MediaPipe</span><span>Generative AI</span></div>
+      </div>
+      <div class="skill-group">
+        <h3>Hardware &amp; IoT</h3>
+        <div class="tag-row"><span>Arduino</span><span>Raspberry Pi</span><span>Jetson Nano</span><span>8051</span><span>Azure IoT</span><span>Node-RED</span></div>
+      </div>
+      <div class="skill-group">
+        <h3>Tools</h3>
+        <div class="tag-row"><span>Git / GitHub</span><span>Linux</span><span>VS Code</span><span>PyCharm</span><span>Mendix</span></div>
       </div>
     </div>
   </section>
- 
+
   <!-- EDUCATION -->
   <section id="education" class="section">
     <p class="eyebrow">[ education ]</p>
@@ -202,40 +395,39 @@
     <div class="education-list">
       <div class="education-item">
         <div class="education-head">
-          <h3>Manipal University Jaipur</h3>
-          <span class="timeline-date">2022 – 2026</span>
+          <h3>University of Michigan</h3>
+          <span class="timeline-date">Aug 2026 – May 2028 (Expected)</span>
         </div>
-        <p>B.Tech (Hons), Computer Science &amp; Engineering — IoT &amp; Information Security · CGPA 7.33</p>
+        <p>Master of Science, Robotics — Ann Arbor, MI</p>
       </div>
       <div class="education-item">
         <div class="education-head">
-          <h3>Venkateshwar International School</h3>
-          <span class="timeline-date">2019 – 2022</span>
+          <h3>Manipal University Jaipur</h3>
+          <span class="timeline-date">Sep 2022 – Jun 2026</span>
         </div>
-        <p>XIIth — 81% · Xth — 87%, New Delhi</p>
+        <p>B.Tech (Hons), Computer Science &amp; Engineering — IoT &amp; Intelligent Systems · CGPA 7.77</p>
       </div>
     </div>
   </section>
- 
+
   <!-- CONTACT -->
   <section id="contact" class="section contact-section">
     <p class="eyebrow">[ contact ]</p>
     <h2>Let's talk</h2>
-    <p class="contact-lede">Open to internships and full-time roles in ML engineering, computer vision, and embedded systems.</p>
+    <p class="contact-lede">Open to research collaborations and roles in robotics, computer vision, and applied ML ahead of starting at Michigan.</p>
     <div class="contact-actions">
       <a href="mailto:pranavcr26@gmail.com" class="btn btn-primary">pranavcr26@gmail.com</a>
       <a href="https://github.com/admiral-vader88" class="btn btn-ghost" target="_blank" rel="noopener">GitHub</a>
       <a href="https://www.linkedin.com/in/pranav-jha-273952269/" class="btn btn-ghost" target="_blank" rel="noopener">LinkedIn</a>
     </div>
   </section>
- 
+
 </main>
- 
+
 <footer class="site-footer">
   <p>© 2026 Pranav Jha</p>
 </footer>
- 
+
 <script src="script.js"></script>
 </body>
 </html>
- 
