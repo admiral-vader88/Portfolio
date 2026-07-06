@@ -57,3 +57,28 @@ if (themeToggle) {
     applyThemeButtonState(next);
   });
 }
+
+// Resume/CV dropdown menu.
+const resumeDropdown = document.querySelector('.resume-dropdown');
+const resumeToggle = document.querySelector('.resume-toggle');
+
+if (resumeDropdown && resumeToggle) {
+  const closeDropdown = () => {
+    resumeDropdown.classList.remove('open');
+    resumeToggle.setAttribute('aria-expanded', 'false');
+  };
+
+  resumeToggle.addEventListener('click', (event) => {
+    event.stopPropagation();
+    const isOpen = resumeDropdown.classList.toggle('open');
+    resumeToggle.setAttribute('aria-expanded', String(isOpen));
+  });
+
+  document.addEventListener('click', (event) => {
+    if (!resumeDropdown.contains(event.target)) closeDropdown();
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') closeDropdown();
+  });
+}
