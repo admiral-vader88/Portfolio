@@ -34,3 +34,26 @@ if ('IntersectionObserver' in window && sections.length) {
 
   sections.forEach((section) => observer.observe(section));
 }
+
+// Theme toggle (light/dark), persisted in localStorage.
+const themeToggle = document.getElementById('theme-toggle');
+
+function applyThemeButtonState(theme) {
+  if (!themeToggle) return;
+  const isDark = theme === 'dark';
+  themeToggle.setAttribute('aria-pressed', String(isDark));
+  themeToggle.setAttribute('aria-label', isDark ? 'Switch to light theme' : 'Switch to dark theme');
+}
+
+if (themeToggle) {
+  // Reflect whatever theme the inline head script already applied.
+  applyThemeButtonState(document.documentElement.getAttribute('data-theme'));
+
+  themeToggle.addEventListener('click', () => {
+    const current = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+    const next = current === 'dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', next);
+    localStorage.setItem('theme', next);
+    applyThemeButtonState(next);
+  });
+}
