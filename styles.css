@@ -459,6 +459,17 @@ a.project-card:hover {
   font-size: 0.95rem;
 }
 
+a.list-title {
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+a.list-title:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
 .list-meta {
   font-family: var(--font-mono);
   font-size: 0.75rem;
